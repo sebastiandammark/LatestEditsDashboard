@@ -185,6 +185,7 @@
 				<span><xsl:value-of select="concat(@nodeName, ' ')" /></span>
 				<xsl:apply-templates select="." mode="editLink" />
 				<xsl:apply-templates select="." mode="xmldumpLink" />
+				<span><xsl:value-of select="concat(' ', @writerName)"/></span>
 			</li>
 		</xsl:if>
 	</xsl:template>
